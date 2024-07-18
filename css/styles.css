@@ -289,3 +289,17 @@ footer a.nav-list-logo {
   display: inline-block;
   margin-bottom: 16px;
 }
+.svg-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 112px;
+  background-color: #f4f4fd;
+  border-radius: 4px;
+  border: 1px solid #8e8f99;
+  margin-bottom: 8px;
+}
+.svg-icons {
+  width: 64;
+  height: 64;
+}
