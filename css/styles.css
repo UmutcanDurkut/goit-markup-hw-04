@@ -1,0 +1,260 @@
+/* Reset Css */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Şartlar Bölümü */
+body {
+  font-family: "Roboto", sans-serif;
+  color: #434455;
+  background-color: #ffffff;
+}
+button {
+  cursor: pointer;
+}
+
+/* Header Navbar Adress  */
+/* Logo Class'ı */
+.nav-list-logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #4d5ae5;
+  margin-right: 76px;
+}
+.logo-span {
+  color: #2e2f42;
+}
+
+/* Link Class'ı */
+.list-link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+  padding: 24px 0;
+}
+.list-link:hover,
+:focus {
+  color: #404bbf;
+}
+/* Address Linkleri Class'ı */
+.address-link {
+  font-style: normal;
+}
+.address-link .list-link {
+  color: #434455;
+}
+address.address-link .list-link:hover,
+address.address-link .list-link:focus {
+  color: #404bbf;
+}
+/* İlk Section Bölümü */
+.section-one {
+  background-color: #2e2f42;
+  padding: 188px 0;
+}
+.main-title {
+  font-size: 56px;
+  line-height: 1.07;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  max-width: 496px;
+}
+.button-first {
+  background-color: #4d5ae5;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  display: block;
+  margin: 0 auto;
+  min-width: 169px;
+  height: 56px;
+  border: none;
+  border-radius: 4px;
+}
+.button-first:hover,
+:focus {
+  background-color: #404bbf;
+}
+/* h3/2 title & p &li ortak class */
+.h-two {
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: #2e2f42;
+  margin-bottom: 72px;
+}
+.h-three {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+  margin-bottom: 8px;
+}
+.paragraph {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+}
+.list-li {
+  background-color: #ffffff;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+  width: calc((100% - 72px) / 4);
+}
+
+/* Üçüncü Section Bölümü */
+.section-three {
+  background-color: #f4f4fd;
+  padding: 120px 0;
+}
+.foot {
+  background-color: #2e2f42;
+  padding: 100px 0;
+}
+.foot-paragraph {
+  line-height: 1.5;
+  color: #f4f4fd;
+  letter-spacing: 0.02em;
+  max-width: 264px;
+}
+footer .logo-span {
+  color: #f4f4fd;
+}
+.header {
+  border-bottom: 1px solid #e7e9fc;
+}
+.div-header {
+  display: flex;
+}
+.container {
+  width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+}
+.nav-ul {
+  display: flex;
+  gap: 40px;
+}
+.section-two {
+  padding: 120px 0;
+}
+/* Kendi denediklerim olmadığı için chatgpt ye sordum. Verdiği kod! */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.section-ul {
+  display: flex;
+  gap: 24px;
+}
+.list-li.bradius {
+  border-radius: 0px 0px 4px 4px;
+}
+.workers {
+  padding: 32px 0;
+}
+.workers h3.h-three {
+  text-align: center;
+}
+.workers p.paragraph {
+  text-align: center;
+}
+.section-four {
+  padding: 120px 0;
+}
+.portfolio-ul {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
+}
+.port-div {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+  margin-bottom: 8px;
+}
+.section-four li.list-li {
+  width: calc((100% - 48px) / 3);
+}
+
+footer a.nav-list-logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #4d5ae5;
+  display: inline-block;
+  margin-bottom: 16px;
+}
