@@ -323,7 +323,8 @@ footer a.nav-list-logo {
   align-items: center;
   justify-content: center;
 }
-.icon-link:hover {
+.icon-link:hover,
+.icon-link:focus {
   background-color: #404bbf;
 }
 .worker-social {
