@@ -75,6 +75,28 @@ header {
 }
 
 /* Link Class'ı */
+
+.list-link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+  padding: 24px 0;
+}
+.list-link:hover,
+:focus {
+  color: #404bbf;
+}
+/* Address Linkleri Class'ı */
+
+.address-link .list-link {
+  color: #434455;
+}
+address.address-link .list-link:hover,
+address.address-link .list-link:focus {
+  color: #404bbf;
+}
 .link-style {
   position: relative;
   color: #404bbf;
@@ -90,29 +112,9 @@ header {
   background-color: #404bbf;
   border-radius: 2px;
 }
-.list-link {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #2e2f42;
-  padding: 24px 0;
-}
-.list-link:hover,
-:focus {
-  color: #404bbf;
-}
-/* Address Linkleri Class'ı */
 .address-link {
   font-style: normal;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.address-link .list-link {
-  color: #434455;
-}
-address.address-link .list-link:hover,
-address.address-link .list-link:focus {
-  color: #404bbf;
 }
 /* İlk Section Bölümü */
 .section-one {
