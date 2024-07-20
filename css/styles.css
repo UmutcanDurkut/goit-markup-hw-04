@@ -359,3 +359,11 @@ footer a.nav-list-logo {
 .worker-social {
   fill: #f4f4fd;
 }
+.div-flex-footer {
+  display: flex;
+  align-items: baseline;
+  margin-right: 120px;
+}
+.foot-div {
+  margin-right: 120px;
+}
