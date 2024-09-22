@@ -52,6 +52,19 @@
   letter-spacing: 0.02em;
   color: var(--navyblue);
   padding: 24px 0;
+  position: relative;
+  color: var(--ocean);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.navbar-link:active:after pseudo {
+  content: "";
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  height: 4px;
+  background-color: var(--ocean);
+  border-radius: 2px;
 }
 .navbar-link:hover {
   color: var(--ocean);
@@ -65,6 +78,7 @@
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--slate);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .address-link:hover,
 .address-link:focus {
@@ -75,6 +89,10 @@
   border-color: var(--cornflower);
   padding-top: 24px;
   padding-bottom: 24px;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+  max-width: 1440px;
+  width: 100%;
 }
 
 /* < Body / Section > */
@@ -88,14 +106,25 @@
 }
 body {
   font-family: var(--roboto);
+  overflow-x: hidden;
 }
 * {
   font-family: inherit;
 }
+
 .hero {
   background-color: #2e2f42;
   padding: 188px 0;
   display: flex;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/hero.png);
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .p-content {
   font-size: 16px;
@@ -121,6 +150,16 @@ body {
   border: 1px solid;
   border-color: var(--cornflower);
   border-top: none;
+  margin-bottom: 8px;
+}
+.svg-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 112px;
+  background-color: var(--cloud);
+  border-radius: 4px;
+  border: 1px solid var(--lightslate);
   margin-bottom: 8px;
 }
 /* UL-Li List  */
@@ -194,6 +233,7 @@ body {
   border: none;
   border-radius: 4px;
   display: block;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button-item:hover,
 .button-item:focus {
@@ -214,7 +254,8 @@ body {
   padding-left: 156px;
 }
 .container {
-  width: 1158px;
+  max-width: 1158px;
+  width: 100%;
   margin: 0 auto;
   padding: 0 15px;
 }
