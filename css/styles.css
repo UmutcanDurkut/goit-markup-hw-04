@@ -27,6 +27,56 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+button,
+a {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 /* < Header area / Navbar / Address  Logo
  Başlık alanı / Gezinme çubuğu / Adresleyici > */
 .logo-link {
@@ -56,15 +106,15 @@
   color: var(--ocean);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.navbar-link:active:after pseudo {
+.navbar-link:after {
   content: "";
-  width: 100%;
   position: absolute;
   left: 0;
-  bottom: -1px;
-  height: 4px;
+  bottom: -2px;
+  height: 2px;
+  width: 100%;
   background-color: var(--ocean);
-  border-radius: 2px;
+  transition: width 0.3s ease;
 }
 .navbar-link:hover {
   color: var(--ocean);
@@ -92,7 +142,7 @@
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
   max-width: 1440px;
-  width: 100%;
+  border-right: none;
 }
 .social-svg-link {
   width: 100%;
@@ -128,7 +178,6 @@
 }
 
 /* < Body / Section > */
-
 .feature,
 .ourteam-section,
 .ourportfolio-section {
@@ -153,10 +202,11 @@ body {
       rgba(46, 47, 66, 0.7)
     ),
     url(../images/hero.png);
-  width: 100%;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 .p-content {
   font-size: 16px;
@@ -246,6 +296,7 @@ body {
 .our-li {
   width: calc((100% - 72px) / 3);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border-top: none;
 }
 .our-li:hover {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
