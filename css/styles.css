@@ -324,8 +324,8 @@ body {
   gap: 16px;
 }
 .social-li-footer {
-  width: 40px;
-  height: 40px;
+  width: 45px;
+  height: 45px;
 }
 /* < Titles / Başlıklar > */
 .hone-title {
@@ -363,6 +363,7 @@ body {
   letter-spacing: 0.02em;
   color: var(--navyblue);
   margin-bottom: 8px;
+  text-align: left;
 }
 
 /* < Butonlar / Buttons > */
