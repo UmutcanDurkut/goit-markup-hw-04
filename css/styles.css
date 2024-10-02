@@ -214,6 +214,13 @@ body {
   color: var(--slate);
   text-align: center;
 }
+.p-content-fix {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--slate);
+  text-align: left;
+}
 .p-content-our {
   font-size: 16px;
   line-height: 1.5;
@@ -421,4 +428,9 @@ body {
 .div-footer {
   display: flex;
   align-items: baseline;
+}
+.text-x > p,
+.text-x > h3 {
+  display: flex;
+  text-align: left;
 }
