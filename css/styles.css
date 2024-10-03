@@ -264,7 +264,7 @@ body {
   border: 1px solid;
   border-color: var(--cornflower);
   border-top: none;
-  margin-bottom: 8px;
+  /* margin-bottom: 8px; */
   position: relative;
   overflow: hidden;
 }
@@ -452,4 +452,24 @@ body {
 /* Varsayılan olarak hover SVG'yi gizle */
 .hover-svg {
   display: none;
+}
+
+.social-svg-link {
+  position: relative; /* İki SVG'nin üst üste gelmesi için */
+}
+
+.social-icon {
+  display: block; /* Normal SVG'yi göster */
+}
+
+.hover-icon {
+  display: none; /* Başlangıçta hover SVG'yi gizle */
+}
+
+.social-svg-link:hover .social-icon {
+  display: none; /* Normal SVG'yi gizle */
+}
+
+.social-svg-link:hover .hover-icon {
+  display: block; /* Hover SVG'yi göster */
 }
