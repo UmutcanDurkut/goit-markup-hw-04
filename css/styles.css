@@ -173,9 +173,6 @@ a {
 .social-link-footer:focus {
   background-color: var(--green);
 }
-.footer-svg {
-  fill: var(--cloud);
-}
 
 /* < Body / Section > */
 .feature,
@@ -435,6 +432,24 @@ body {
   display: flex;
   text-align: left;
 }
-.social-footer {
+.social-link-footer {
   position: relative;
+}
+
+.footer-svg,
+.hover-svg {
+  display: block; /* Her iki SVG'yi de blok olarak göster */
+}
+
+.social-link-footer:hover .footer-svg {
+  display: none; /* Normal SVG'yi gizle */
+}
+
+.social-link-footer:hover .hover-svg {
+  display: block; /* Hover SVG'yi göster */
+}
+
+/* Varsayılan olarak hover SVG'yi gizle */
+.hover-svg {
+  display: none;
 }
