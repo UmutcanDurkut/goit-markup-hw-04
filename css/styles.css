@@ -152,6 +152,10 @@ a {
   align-items: center;
   justify-content: center;
 }
+.social-icon,
+.hover-icon {
+  height: 40px;
+}
 .social-svg-link:hover,
 .social-svg-link:focus {
   background-color: var(--ocean);
@@ -439,6 +443,7 @@ body {
 .footer-svg,
 .hover-svg {
   display: block; /* Her iki SVG'yi de blok olarak göster */
+  height: 40px;
 }
 
 .social-link-footer:hover .footer-svg {
